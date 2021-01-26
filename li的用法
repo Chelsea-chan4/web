@@ -1,0 +1,46 @@
+div前面的小点
+1、在CSS中：在li和.ul下写入list-sytle:none;或list-style-type:none, 这种写法特别是在一些CMS中最常见。
+2、在相关的页面找到head部分写入下面的代码
+<style type="text/css">
+list-style:none;
+</style>
+3、在li,ul内加入list-style。如<ul style="list-style-type:none><li><a herf="http://blog.csdn.net/business122">我的博客</a></li>< /ul> 当然这种是很麻烦的了。
+最简单的就是第一种了，通过CSS来控制，这个当然会有不错的效果了。
+这几种方法都是通过设置list-style:none来设置的，有的是会用list-style-type，下面我们来看一看它的属性.
+none不使用项目符号
+disc实心圆，默认值
+circle空心圆
+square实心方块
+decimal阿拉伯数字
+lower-roman小写罗马数字
+upper-roman大写罗马数字
+lower-alpha小写英文字母
+upper-alpha大写英文字母
+这些都可以来代替上文中的none,想要什么样的都会有一个相应的对应。
+ 
+ A).运用CSS格式化列表符： ul li{
+list-style-type:none;
+}
+B).如果你想将列表符换成图像，则： ul li{
+list-style-type:none;
+list-style-image: url(images/icon.gif);
+}
+C).为了左对齐，可以用如下代码： ul{
+list-style-type:none;
+margin:0px;
+}
+D).如果想给列表加背景色，可以用如下代码： ul{
+list-style-type: none;
+margin:0px;
+}
+ul li{
+background:#CCC;
+}
+E).如果想给列表加MOUSEOVER背景变色效果，可以用如下代码： ul{ list-style-type: none; margin:0px; }
+ul li a{ display:block; width: 100%; background:#ccc; }
+ul li a:hover{ background:#999; }说明：display:block;这一行必须要加的，这样才能块状显示！
+ 
+F).LI中的元素水平排列,关键FLOAT:LEFT： ul{
+list-style-type:none;
+width:100%;
+}
